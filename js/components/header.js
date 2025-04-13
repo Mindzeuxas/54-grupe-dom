@@ -1,9 +1,9 @@
 export function header() {
-    let base = 'http://localhost:5408/';
+    let base = origin + '/';
     let projectName = '';
     if (location.hostname !== 'localhost') {
         projectName = '/' + location.pathname.split('/')[1];
-        base = 'https://mindzeuxas.github.io' + projectName + '/';
+        base = location.origin + projectName + '/';
     }
     document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
 
