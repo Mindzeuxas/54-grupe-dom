@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/like.css">
+</head>
+
+<body>
+    <h1>Like</h1>
+
+    <button id="add" type="button" class="btn">+</button>
+
+    <ul id="list" class="list">
+        <template id="item">
+            <li class="item">
+                <span class="count">0</span>
+                <p class="text">{{text}}</p>
+                <form class="actions">
+                    <button type="button" class="btn">-</button>
+                    <button type="button" class="btn">+</button>
+                </form>
+            </li>
+        </template>
+    </ul>
+
+    <script type="module" src="../js/pages/like.js"></script>
+</body>
+
+</html>

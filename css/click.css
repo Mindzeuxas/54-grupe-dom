@@ -1,0 +1,12 @@
+.clicker {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.clicker .btn {
+  font-size: 3rem;
+  width: 3rem;
+}
+.clicker .count {
+  font-size: 2rem;
+}
