@@ -3,7 +3,7 @@ export function header() {
     let projectName = '';
     if (location.hostname !== 'localhost') {
         projectName = '/' + location.pathname.split('/')[1];
-        base = 'https://mindzeuxas.github.io' + projectName;
+        base = 'https://mindzeuxas.github.io' + projectName + '/';
     }
     document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
 
@@ -30,7 +30,7 @@ export function header() {
 
     const HTML = `
         <header class="main-header">
-            <img class="logo" src="${base}/img/logo.png" alt="Logo">
+            <img class="logo" src="./img/logo.png" alt="Logo">
             <nav class="main-nav">${linksHTML}</nav>
         </header>`;
 
