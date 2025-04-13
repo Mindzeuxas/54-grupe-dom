@@ -3,7 +3,7 @@ export function header() {
     let projectName = '';
     if (location.hostname !== 'localhost') {
         projectName = '/' + location.pathname.split('/')[1];
-        base = 'https://Mindzeuxas.github.io' + projectName;
+        base = 'https://mindzeuxas.github.io' + projectName;
     }
     document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
 
