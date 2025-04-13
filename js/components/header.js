@@ -30,7 +30,7 @@ export function header() {
 
     const HTML = `
         <header class="main-header">
-            <img class="logo" src="./img/logo.png" alt="Logo">
+            <img class="logo" src="${base}/img/logo.png" alt="Logo">
             <nav class="main-nav">${linksHTML}</nav>
         </header>`;
 
