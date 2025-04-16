@@ -1,11 +1,11 @@
 export function header() {
-    let base = origin + '/';
-    let projectName = '';
-    if (location.hostname !== 'localhost') {
-      projectName = '/' + location.pathname.split('/')[1];
-      base = location.origin + projectName + '/';
-    }
-    document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
+   let base = origin + '/';
+   let projectName = '';
+   if (location.hostname !== 'localhost') {
+     projectName = '/' + location.pathname.split('/')[1];
+     base = location.origin + projectName + '/';
+   }
+   document.head.insertAdjacentHTML('afterbegin', `<base href="${base}">`);
 
     const menu = [
         { text: 'Home', href: '/' },
